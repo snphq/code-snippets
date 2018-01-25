@@ -147,12 +147,12 @@ class FilePreview extends React.Component {
       <ButtonIcon
         icon={this.getNameIcon(typeFile)}
         className={classnames(theme.mobileIcon, className,
-            {
-              [theme.audio]: typeFile === 'audio',
-              [theme.video]: typeFile === 'video',
-              [theme.image]: typeFile === 'slide',
-              [theme.presentation]: typeFile === 'presentation'
-            }
+          {
+            [theme.audio]: typeFile === 'audio',
+            [theme.video]: typeFile === 'video',
+            [theme.image]: typeFile === 'slide',
+            [theme.presentation]: typeFile === 'presentation'
+          }
         )}
       />
     );
@@ -160,16 +160,16 @@ class FilePreview extends React.Component {
 
   render() {
     const {
-        theme,
-        className,
-        i18n,
-        label,
-        imageUrl,
-        downloadUrl,
-        status,
-        draggable,
-        isLinkMode,
-        typeFile
+      theme,
+      className,
+      i18n,
+      label,
+      imageUrl,
+      downloadUrl,
+      status,
+      draggable,
+      isLinkMode,
+      typeFile
     } = this.props;
 
     const { isHovered } = this.state;
